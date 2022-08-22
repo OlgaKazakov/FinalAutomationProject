@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "Suite Web Testing" parallel = "false">
+    <test name = "Web Testing Saucedemo" >
+        <parameter name ="PlatformName" value = "web" />
+        <classes>
+            <class name ="sanity.SaucedemoWeb">
+                <methods>
+                    <exclude name ="test01_verifyLockedOutUser"/>
+                    <exclude name = "test04_verifyImage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

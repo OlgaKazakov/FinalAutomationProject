@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Environment>
+    <!-- Timeout -->
+    <Timeout>5</Timeout>
+
+    <!-- General  -->
+    <PlatformName>web</PlatformName>
+
+    <!-- Web -->
+    <BrowserName>chrome</BrowserName>
+    <url>https://www.saucedemo.com/</url>
+    <ImageRepo>C:\ProjectsAutomation\MyFinalProject\ImageRepository\</ImageRepo>
+
+
+    <!-- Data Driven Testing -->
+    <DDTFile>./DDTFiles/ddt-users.csv</DDTFile>
+</Environment>

@@ -1,0 +1,14 @@
+utilities\Base.class
+utilities\ManagePages.class
+extensions\UIActions.class
+utilities\MScreenRecorder.class
+pageObjects\sauceDemo\LoginPage.class
+workflows\WebFlows.class
+utilities\CommonOps.class
+utilities\Listeners.class
+extensions\Verifications.class
+pageObjects\sauceDemo\CheckoutPage.class
+utilities\ManageDDT.class
+pageObjects\sauceDemo\MainPage.class
+pageObjects\sauceDemo\ChOverviewPage.class
+pageObjects\sauceDemo\CartPage.class

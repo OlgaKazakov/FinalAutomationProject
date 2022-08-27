@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-21T22:42:10 IDT" name="Suite Web Testing" finished-at="2022-08-21T22:43:04 IDT" duration-ms="54597">
+    <groups>
+    </groups>
+    <test started-at="2022-08-21T22:42:10 IDT" name="Web Testing Saucedemo" finished-at="2022-08-21T22:43:04 IDT" duration-ms="54597">
+      <class name="sanity.SaucedemoWeb">
+        <test-method is-config="true" signature="startSession(java.lang.String)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:10 IDT" name="startSession" finished-at="2022-08-21T22:42:23 IDT" duration-ms="13154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:23 IDT" name="beforeMethod" finished-at="2022-08-21T22:42:23 IDT" duration-ms="349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SaucedemoWeb.test01_verifyTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test01_verifyTitle()[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:24 IDT" name="test01_verifyTitle" description="Test01 - Verifies at Title of Mainpage after Login" finished-at="2022-08-21T22:42:27 IDT" duration-ms="2779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01_verifyTitle -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:28 IDT" name="beforeMethod" finished-at="2022-08-21T22:42:28 IDT" duration-ms="31" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SaucedemoWeb.test02_VerifyProductList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test02_VerifyProductList()[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:28 IDT" name="test02_VerifyProductList" description="Test02 - Verifies Amount of Products" finished-at="2022-08-21T22:42:28 IDT" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02_VerifyProductList -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:28 IDT" name="beforeMethod" finished-at="2022-08-21T22:42:28 IDT" duration-ms="30" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SaucedemoWeb.test03_addToCartAndVerify()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test03_addToCartAndVerify()[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:28 IDT" name="test03_addToCartAndVerify" description="Test03 - Verifies Adding Product to Cart" finished-at="2022-08-21T22:42:31 IDT" duration-ms="2732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03_addToCartAndVerify -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:31 IDT" name="beforeMethod" finished-at="2022-08-21T22:42:31 IDT" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SaucedemoWeb.test04_checkoutAndVerify()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test04_checkoutAndVerify()[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:31 IDT" name="test04_checkoutAndVerify" description="Test04 - Verifies at Checkout" finished-at="2022-08-21T22:42:32 IDT" duration-ms="1361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test04_checkoutAndVerify -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:33 IDT" name="beforeMethod" finished-at="2022-08-21T22:42:33 IDT" duration-ms="22" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SaucedemoWeb.test05_loginWithDDTAndVerify(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test05_loginWithDDTAndVerify(java.lang.String,java.lang.String)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:33 IDT" name="test05_loginWithDDTAndVerify" description="Test05 - Login with Data Driven Testing" data-provider="data-provider-users" finished-at="2022-08-21T22:42:39 IDT" duration-ms="6011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05_loginWithDDTAndVerify -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:39 IDT" name="beforeMethod" finished-at="2022-08-21T22:42:39 IDT" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SaucedemoWeb.test05_loginWithDDTAndVerify(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test05_loginWithDDTAndVerify(java.lang.String,java.lang.String)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:39 IDT" name="test05_loginWithDDTAndVerify" description="Test05 - Login with Data Driven Testing" data-provider="data-provider-users" finished-at="2022-08-21T22:42:45 IDT" duration-ms="6220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05_loginWithDDTAndVerify -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:45 IDT" name="beforeMethod" finished-at="2022-08-21T22:42:45 IDT" duration-ms="111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SaucedemoWeb.test05_loginWithDDTAndVerify(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test05_loginWithDDTAndVerify(java.lang.String,java.lang.String)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:45 IDT" name="test05_loginWithDDTAndVerify" description="Test05 - Login with Data Driven Testing" data-provider="data-provider-users" finished-at="2022-08-21T22:42:52 IDT" duration-ms="6448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05_loginWithDDTAndVerify -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:52 IDT" name="beforeMethod" finished-at="2022-08-21T22:42:52 IDT" duration-ms="24" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void sanity.SaucedemoWeb.test05_loginWithDDTAndVerify(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test05_loginWithDDTAndVerify(java.lang.String,java.lang.String)[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:42:52 IDT" name="test05_loginWithDDTAndVerify" description="Test05 - Login with Data Driven Testing" data-provider="data-provider-users" finished-at="2022-08-21T22:43:04 IDT" duration-ms="11472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test05_loginWithDDTAndVerify -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:sanity.SaucedemoWeb@476a736d]" started-at="2022-08-21T22:43:04 IDT" name="closeSession" finished-at="2022-08-21T22:43:04 IDT" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeSession -->
+      </class> <!-- sanity.SaucedemoWeb -->
+    </test> <!-- Web Testing Saucedemo -->
+  </suite> <!-- Suite Web Testing -->
+</testng-results>

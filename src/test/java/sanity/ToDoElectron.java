@@ -1,6 +1,5 @@
 package sanity;
 
-import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Description;
 import org.testng.annotations.Listeners;
@@ -18,12 +17,10 @@ public class ToDoElectron extends CommonOps {
         Verifications.verifyNumberWithNumber(ElectronFlows.CountNumberOfTasks(), before+1);
     }
 
-    @Test(description = "Test02 - Marking Task as Completed and Verifying")
-    @Description("This test marks task as completed and verifies")
+    @Test(description = "Test02 - Marking Task as Completed")
+    @Description("This test marks task as completed")
     public void test02_markingAsComplete() {
-        //System.out.println(ElectronFlows.FindingTaskByName("To read the book"));
         ElectronFlows.MarkingTaskAsCompleted(0);
-        //        ElectronFlows.MarkingTaskAsCompleted(ElectronFlows.FindingTaskByName("To read the book"));
     }
 
     @Test(description = "Test03 - Adding Tasks with Data Driven Testing", dataProvider = "data-provider-tasks", dataProviderClass = utilities.ManageDDTList.class)

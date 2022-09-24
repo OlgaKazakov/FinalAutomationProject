@@ -5,7 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import utilities.CommonOps;
 
-import java.util.List;
 
 public class LoginPage extends CommonOps {
 
@@ -36,12 +35,5 @@ public class LoginPage extends CommonOps {
     public WebElement getMessage_ErrorLogin() {
         return message_ErrorLogin;
     }
-
-//    @FindBy (how = How.CLASS_NAME, using = "svg-inline--fa fa-times-circle fa-w-16 error_icon")
-//    private List <WebElement> btn_clearList;
-
-//    public List <WebElement> getBtn_clear() {
-//        return btn_clearList;
-//    }
 
 }

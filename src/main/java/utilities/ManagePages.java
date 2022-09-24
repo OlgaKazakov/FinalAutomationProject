@@ -1,7 +1,7 @@
 package utilities;
 
 import org.openqa.selenium.support.PageFactory;
-import pageObjects.eribank.LoginPage;
+import pageObjects.toDoList.MainPage;
 
 public class ManagePages extends Base{
 
@@ -26,7 +26,7 @@ public class ManagePages extends Base{
     }
 
     public static void initToDoList() {
-        mainToDo = PageFactory.initElements(driver, pageObjects.toDoList.MainPage.class);
+        mainToDo = PageFactory.initElements(driver, MainPage.class);
     }
 
     public static void initCalculator() {

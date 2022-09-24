@@ -17,6 +17,5 @@ public class APIActions extends CommonOps {
     public static String extractFromJson(Response response, String path) {
         jp = response.jsonPath();
         return jp.getString(path);
-        //return jp.get(path).toString; - from Yoni
     }
 }

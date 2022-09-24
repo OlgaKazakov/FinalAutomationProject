@@ -12,7 +12,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.asserts.SoftAssert;
-import pageObjects.openWeather.WeatherForecastPage;
+import pageObjects.toDoList.MainPage;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -67,7 +67,7 @@ public class Base {
     protected static pageObjects.eribank.ReportPage reportEribank;
 
     //Page Objects Electron
-    protected static pageObjects.toDoList.MainPage mainToDo;
+    protected static MainPage mainToDo;
 
     //Page Objects Desktop
     protected static pageObjects.calculator.MainPage mainCalculator;

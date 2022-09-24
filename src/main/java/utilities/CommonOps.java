@@ -13,7 +13,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.sikuli.script.Screen;
 import org.testng.annotations.*;
@@ -24,21 +23,11 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.lang.reflect.Method;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.remote.*;
 import workflows.DesktopFlows;
 
 public class CommonOps extends Base{
-
-    /** for Selenium 4.3.0 **/
-    //driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-    //wait = new WebDriverWait(driver, 3);
-    /** for Selenium 3.141.59 **/
-    //wait = new WebDriverWait(driver, Long.parseLong(getData("Timeout")));
 
     public static String getData(String nodeName) {
         File fXmlFile;
@@ -71,10 +60,6 @@ public class CommonOps extends Base{
         else {
             throw new RuntimeException("Invalid Browser Type");
         }
-        /****works in Selenium 4.1.0 ****/
-        //wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        /****works in Selenium 3.1.4 ****/
         wait = new WebDriverWait(driver,Long.parseLong(getData("Timeout")));
         driver.get(getData("url"));
         driver.manage().window().maximize();
@@ -117,9 +102,6 @@ public class CommonOps extends Base{
         else {
             throw new RuntimeException("Invalid Browser Type");
         }
-        /****works in Selenium 4.1.0 ****/
-        //wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        /** for Selenium 3.141.59 **/
         wait = new WebDriverWait(driver, Long.parseLong(getData("Timeout")));
         driver.get(getData("urlWeb"));
         driver.manage().window().maximize();
@@ -138,9 +120,6 @@ public class CommonOps extends Base{
 
         ManagePages.initToDoList();
         driver.manage().timeouts().implicitlyWait(Long.parseLong((getData("Timeout"))), TimeUnit.SECONDS);
-        /****works in Selenium 4.1.0 ****/
-        //wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        /** for Selenium 3.141.59 **/
         wait = new WebDriverWait(driver, Long.parseLong(getData("Timeout")));
         action = new Actions(driver);
     }
@@ -152,10 +131,6 @@ public class CommonOps extends Base{
         } catch (Exception e) {
             System.out.println("Can not connect to Appium Server: " + e);
         }
-        /** for Selenium 4.3.0 **/
-        //driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        //wait = new WebDriverWait(driver, 3);
-        /** for Selenium 3.141.59 **/
         wait = new WebDriverWait(driver, Long.parseLong(getData("Timeout")));
         ManagePages.initCalculator();
     }

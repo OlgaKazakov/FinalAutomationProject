@@ -35,16 +35,7 @@ public class PaymentPage {
     @AndroidFindBy(id="button1")
     public MobileElement btn_yes;
 
-    @AndroidFindBy(xpath="//*[@text='United Kingdom']")
-    public MobileElement countryUK;
-
     @AndroidFindBy(xpath="//*[@text='Mexico']")
     public MobileElement countryMexico;
-
-
-
-    @AndroidFindBy(xpath="//*[@text='USA']")
-    public MobileElement countryUSA;
-
 
 }

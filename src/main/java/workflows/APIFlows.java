@@ -3,11 +3,6 @@ package workflows;
 import extensions.APIActions;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.Assert;
 import utilities.CommonOps;
 
 public class APIFlows extends CommonOps {

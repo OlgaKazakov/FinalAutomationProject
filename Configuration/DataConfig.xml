@@ -3,9 +3,6 @@
     <!-- Timeout -->
     <Timeout>5</Timeout>
 
-    <!-- General  -->
-    <!--<PlatformName>web</PlatformName>-->
-
     <!-- <Web -->
     <BrowserName>chrome</BrowserName>
     <url>https://www.saucedemo.com/</url>
@@ -30,7 +27,6 @@
     <AppPackage>com.experitest.ExperiBank</AppPackage>
     <AppActivity>.LoginActivity</AppActivity>
     <AppiumServer>http://localhost:4723/wd/hub</AppiumServer>
-
 
     <!-- Electron -->
     <ElectronDriverPath>./Drivers/electrondriver.exe</ElectronDriverPath>

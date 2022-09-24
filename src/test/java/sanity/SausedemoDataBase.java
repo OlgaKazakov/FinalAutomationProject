@@ -25,7 +25,7 @@ public class SausedemoDataBase extends CommonOps {
         int num = DBActions.getNumberOfRowsInDB("SELECT COUNT(*) AS Username FROM SauseDemoUsers WHERE Details = 'uncorrect'");
         DBActions.deleteRowsFromDB("DELETE FROM SauseDemoUsers WHERE Details = 'uncorrect'");
         int actual = DBActions.getNumberOfRowsInDB("SELECT COUNT(*) AS Username FROM SauseDemoUsers");
-        Verifications.verifyNumberWithNumber(actual, before-1);
+        Verifications.verifyNumberWithNumber(actual, before-num);
     }
 
     @Test (description = "Test03 - Adding new correct credentials in database and verifies it")
@@ -63,6 +63,5 @@ public class SausedemoDataBase extends CommonOps {
         int actual = DBActions.getNumberOfRowsInDB("SELECT COUNT(*) AS Username FROM SauseDemoUsers");
         Verifications.verifyNumberWithNumber(actual, before-num);
     }
-
 
 }

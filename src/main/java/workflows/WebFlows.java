@@ -1,14 +1,11 @@
 package workflows;
 
 import com.google.common.util.concurrent.Uninterruptibles;
-import extensions.DBActions;
 import extensions.UIActions;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebElement;
 import utilities.Base;
 import utilities.CommonOps;
-
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class WebFlows extends CommonOps {
@@ -18,7 +15,6 @@ public class WebFlows extends CommonOps {
         UIActions.updateText(Base.loginSaucedemo.getUserName(), user);
         UIActions.updateText(Base.loginSaucedemo.getPassword(), pass);
         UIActions.click(Base.loginSaucedemo.getBtnLogin());
-        //driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
     }
 
@@ -35,7 +31,6 @@ public class WebFlows extends CommonOps {
     @Step ("Business Flow: Payment")
     public static void payment (WebElement elem, String firstname, String lastname, String postcode){
         UIActions.click(elem);
-        //driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
         UIActions.updateText(checoutSaucedemo.getTxt_firstName(), firstname);
         UIActions.updateText(checoutSaucedemo.getTxt_lastName(), lastname);

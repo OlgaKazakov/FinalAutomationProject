@@ -23,25 +23,10 @@ public class Verifications extends CommonOps {
         assertEquals(elem.getText(), expected);
     }
 
-    @Step ("Verify Text in Mobile Element")
-    public static void verifyTextInMobileElement(MobileElement elem, String expected) {
-        wait.until(ExpectedConditions.elementToBeClickable(elem));
-        assertEquals(elem.getText(), expected);
-    }
-
     @Step ("Verify Number of Elements")
     public static void verifyNumberOfElements(List<WebElement> list, int expected) {
         wait.until(ExpectedConditions.elementToBeClickable(list.get(list.size()-1)));
         assertEquals(list.size(), expected);
-    }
-
-    @Step ("Verify Element Visually")
-    public static void verifyElementVisually (String expectedImageName){
-        try {
-            screen.find(getData("ImageRepo")+ expectedImageName +".png");
-        } catch (FindFailed e) {
-            fail("Error Comparing Image File" + e);
-        }
     }
 
     @Step ("Verify Text in Element (SoftAssertion)")
@@ -75,6 +60,5 @@ public class Verifications extends CommonOps {
     public static void verifyElementDisplayed (MobileElement elem){
         elem.isDisplayed();
     }
-
 
 }

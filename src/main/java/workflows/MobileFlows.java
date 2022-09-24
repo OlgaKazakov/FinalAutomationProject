@@ -57,5 +57,4 @@ public class MobileFlows extends CommonOps {
         UIActions.click(mainEribank.btn_logout);
     }
 
-
 }

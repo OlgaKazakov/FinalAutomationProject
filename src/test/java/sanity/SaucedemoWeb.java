@@ -32,7 +32,7 @@ public class SaucedemoWeb extends CommonOps {
     public void test03_addToCartAndVerify (){
         WebFlows.addToCart(mainSaucedemo.getBtn_AddBackpack());
         WebFlows.goToCartContainer(mainSaucedemo.getBtn_CartContainer());
-        Uninterruptibles.sleepUninterruptibly(2, TimeUnit.SECONDS);
+        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
         Verifications.verifyTextInElement(cartSaucedemo.getInCart(), "Sauce Labs Backpack");
     }
 

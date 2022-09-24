@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "Suite Mobile Testing" parallel = "false">
+    <test name = "Mobile Testing Eribank" >
+        <parameter name ="PlatformName" value = "mobile" />
+        <classes>
+            <class name ="sanity.EribankMobile" />
+        </classes>
+    </test>
+</suite>

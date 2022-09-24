@@ -4,14 +4,48 @@
     <Timeout>5</Timeout>
 
     <!-- General  -->
-    <PlatformName>web</PlatformName>
+    <!--<PlatformName>web</PlatformName>-->
 
-    <!-- Web -->
+    <!-- <Web -->
     <BrowserName>chrome</BrowserName>
     <url>https://www.saucedemo.com/</url>
     <ImageRepo>C:\ProjectsAutomation\MyFinalProject\ImageRepository\</ImageRepo>
 
+    <!--API and Web -->
+    <urlAPI>https://api.openweathermap.org/data/2.5/weather</urlAPI>
+    <city>haifa,il</city>
+    <key>e6960be38c61e98ba47ddc49c6b1e2e4</key>
+    <units>metric</units>
+    <pathHumidity>main.humidity</pathHumidity>
+
+    <urlWeb>https://openweathermap.org/</urlWeb>
+    <BrowserNameForApiAndWeb>chrome</BrowserNameForApiAndWeb>
 
     <!-- Data Driven Testing -->
-    <DDTFile>./DDTFiles/ddt-users.csv</DDTFile>
+    <DDTFileUsers>./DDTFiles/ddt-users.csv</DDTFileUsers>
+    <DDTFileTasks>./DDTFiles/ddt-tasks.csv</DDTFileTasks>
+
+    <!-- Mobile -->
+    <UDID>0117111576b14001</UDID>
+    <AppPackage>com.experitest.ExperiBank</AppPackage>
+    <AppActivity>.LoginActivity</AppActivity>
+    <AppiumServer>http://localhost:4723/wd/hub</AppiumServer>
+
+
+    <!-- Electron -->
+    <ElectronDriverPath>./Drivers/electrondriver.exe</ElectronDriverPath>
+    <ElectronAppPath>C:/Users/olgap/AppData/Local/Programs/todolist/Todolist.exe</ElectronAppPath>
+
+    <!-- Desktop -->
+    <CalculatorApp>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</CalculatorApp>
+    <AppiumDesktopServerURL>http://127.0.0.1:4723</AppiumDesktopServerURL>
+
+    <!-- DataBaseConnection -->
+    <DataBaseURL>jdbc:mysql://remotemysql.com:3306/LpqcqS36QV</DataBaseURL>
+    <DBUser>LpqcqS36QV</DBUser>
+    <DBPassword>a6BrkMllO0</DBPassword>
+
+
+
+
 </Environment>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "Suite Web DataBase Testing" parallel = "false">
+    <test name = "Web DataBase Testing Sausedemo">
+        <parameter name ="PlatformName" value="web" />
+        <classes>
+            <class name ="sanity.SausedemoDataBase" />
+        </classes>
+    </test>
+</suite>

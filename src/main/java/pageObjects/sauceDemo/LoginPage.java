@@ -12,9 +12,6 @@ public class LoginPage extends CommonOps {
     @FindBy (how = How.ID, using = "user-name")
     private WebElement txt_userName;
 
-    public LoginPage() {
-    }
-
     public WebElement getUserName() {
         return txt_userName;
     }

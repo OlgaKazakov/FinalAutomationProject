@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "Suite Electron Testing" parallel = "false">
+    <test name = "Electron Testing ToDoList" >
+        <parameter name ="PlatformName" value = "electron" />
+        <classes>
+            <class name ="sanity.ToDoElectron" />
+        </classes>
+    </test>
+</suite>

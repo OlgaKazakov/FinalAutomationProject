@@ -20,7 +20,7 @@ public class ManageDDT extends CommonOps{
         return lines;
     }
 
-    public static Object [][] getDataFromCSV(String filepath){
+    public static Object [][] getDataFromCSVTwoColumns(String filepath){
         List <String> csvData = readCSV(filepath);
         Object[][] data = new Object[csvData.size()][2];
         for (int i =0; i< csvData.size(); i++) {
@@ -32,6 +32,6 @@ public class ManageDDT extends CommonOps{
 
     @DataProvider (name = "data-provider-users")
     public Object [][] getDataObject() {
-        return getDataFromCSV(getData("DDTFile"));
+            return getDataFromCSVTwoColumns(getData("DDTFileUsers"));
     }
 }

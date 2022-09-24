@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "Suite Web Testing" parallel = "false">
+    <test name = "API and Web Testing OpenWeather" >
+        <parameter name ="PlatformName" value = "apiAndWeb" />
+        <classes>
+            <class name ="sanity.OpenWeatherAPIWeb">
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -8,7 +8,7 @@
     <url>https://www.saucedemo.com/</url>
     <ImageRepo>C:\ProjectsAutomation\MyFinalProject\ImageRepository\</ImageRepo>
 
-    <!--API and Web -->
+    <!--API and Web-->
     <urlAPI>https://api.openweathermap.org/data/2.5/weather</urlAPI>
     <city>haifa,il</city>
     <key>e6960be38c61e98ba47ddc49c6b1e2e4</key>

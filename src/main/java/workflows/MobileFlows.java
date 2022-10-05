@@ -30,7 +30,7 @@ public class MobileFlows extends CommonOps {
             MobileActions.swipe(MobileActions.Direction.UP);
             if(Base.paymentEribank.countryMexico.isDisplayed()){
                 UIActions.click(Base.paymentEribank.countryMexico);
-                i=4;
+                break;
             }
         }
         UIActions.click(Base.paymentEribank.btn_sendPayment);

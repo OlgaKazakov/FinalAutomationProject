@@ -5,15 +5,12 @@ import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.sikuli.script.FindFailed;
 import utilities.CommonOps;
 import workflows.WebFlows;
 
 import java.util.List;
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-import static org.testng.FileAssert.fail;
 
 public class Verifications extends CommonOps {
 

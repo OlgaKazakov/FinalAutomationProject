@@ -31,7 +31,6 @@ public class WebFlows extends CommonOps {
     @Step ("Business Flow: Payment")
     public static void payment (WebElement elem, String firstname, String lastname, String postcode){
         UIActions.click(elem);
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
         UIActions.updateText(checoutSaucedemo.getTxt_firstName(), firstname);
         UIActions.updateText(checoutSaucedemo.getTxt_lastName(), lastname);
         UIActions.updateText(checoutSaucedemo.getTxt_postalCode(), postcode);

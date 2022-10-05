@@ -10,7 +10,7 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
-import static org.monte.media.FormatKeys.*;
+import static org.monte.media.FormatKeys.MediaType;
 import static org.monte.media.FormatKeys.FrameRateKey;
 import static org.monte.media.VideoFormatKeys.*;
 import static org.monte.media.VideoFormatKeys.QualityKey;

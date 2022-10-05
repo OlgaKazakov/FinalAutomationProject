@@ -3,10 +3,9 @@ package pageObjects.sauceDemo;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import utilities.CommonOps;
 
 
-public class LoginPage extends CommonOps {
+public class LoginPage {
 
     @FindBy (how = How.ID, using = "user-name")
     private WebElement txt_userName;

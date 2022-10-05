@@ -1,6 +1,5 @@
 package sanity;
 
-import com.google.common.util.concurrent.Uninterruptibles;
 import extensions.UIActions;
 import extensions.Verifications;
 import io.qameta.allure.Description;
@@ -9,7 +8,6 @@ import org.testng.annotations.Test;
 import utilities.CommonOps;
 import workflows.WebFlows;
 
-import java.util.concurrent.TimeUnit;
 
 @Listeners (utilities.Listeners.class)
 public class SaucedemoWeb extends CommonOps {
@@ -32,7 +30,6 @@ public class SaucedemoWeb extends CommonOps {
     public void test03_addToCartAndVerify (){
         WebFlows.addToCart(mainSaucedemo.getBtn_AddBackpack());
         WebFlows.goToCartContainer(mainSaucedemo.getBtn_CartContainer());
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
         Verifications.verifyTextInElement(cartSaucedemo.getInCart(), "Sauce Labs Backpack");
     }
 

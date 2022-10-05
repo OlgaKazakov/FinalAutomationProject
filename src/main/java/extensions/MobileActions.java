@@ -84,7 +84,7 @@ public class MobileActions extends CommonOps {
         UP,
         DOWN,
         LEFT,
-        RIGHT;
+        RIGHT
     }
 
 

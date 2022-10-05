@@ -61,10 +61,17 @@ public class CommonOps extends Base{
             throw new RuntimeException("Invalid Browser Type");
         }
         wait = new WebDriverWait(driver,Long.parseLong(getData("Timeout")));
-        driver.get(getData("url"));
-        driver.manage().window().maximize();
-        ManagePages.initSaucedemo();
         action = new Actions(driver);
+        if(platformname.equalsIgnoreCase("web")){
+            driver.get(getData("url"));
+            ManagePages.initSaucedemo();
+        } else if(platformname.equalsIgnoreCase("apiAndWeb")){
+            driver.get(getData("urlWeb"));
+            ManagePages.initOpenWeather();
+        } else {
+            System.out.println("Invalid Platform Name for Using Browser");
+        }
+        driver.manage().window().maximize();
     }
 
     public static void initMobile(){
@@ -78,35 +85,19 @@ public class CommonOps extends Base{
         }
         ManagePages.initEribank();
         mobileDriver.manage().timeouts().implicitlyWait(Long.parseLong(getData("Timeout")), TimeUnit.SECONDS);
-        /***for selenium 3.141.59***/
         wait = new WebDriverWait(mobileDriver, Long.parseLong(getData("Timeout")));
         action = new Actions(mobileDriver);
     }
 
-    public static void initAPIandWEB(String browserType) {
+    public static void initAPI() {
         String url = getData("urlAPI");
-
         RestAssured.baseURI = url;
         request = RestAssured.given();
+    }
 
-        //initWeb for API
-        if(browserType.equalsIgnoreCase("chrome")) {
-            initChromeBrowser();
-        }
-        else if(browserType.equalsIgnoreCase("firefox")) {
-            initFirefoxBrowser();
-        }
-        else if(browserType.equalsIgnoreCase("ie")) {
-            initIEBrowser();
-        }
-        else {
-            throw new RuntimeException("Invalid Browser Type");
-        }
-        wait = new WebDriverWait(driver, Long.parseLong(getData("Timeout")));
-        driver.get(getData("urlWeb"));
-        driver.manage().window().maximize();
-        ManagePages.initOpenWeather();
-        action = new Actions(driver);
+    public static void initAPIandWEB(String browserType) {
+        initAPI();
+        initBrowser(browserType);
     }
 
     public static void initElectron() {

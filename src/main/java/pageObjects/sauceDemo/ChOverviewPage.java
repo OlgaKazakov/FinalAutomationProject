@@ -3,9 +3,8 @@ package pageObjects.sauceDemo;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import utilities.CommonOps;
 
-public class ChOverviewPage extends CommonOps {
+public class ChOverviewPage {
     @FindBy(how = How.CLASS_NAME, using = "inventory_item_name")
     private WebElement inventName;
 

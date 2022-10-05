@@ -3,11 +3,10 @@ package pageObjects.sauceDemo;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import utilities.CommonOps;
 
 import java.util.List;
 
-public class MainPage extends CommonOps {
+public class MainPage{
 
     @FindBy (how = How.XPATH, using = "//span [@class ='title']")
     private WebElement title_MainPage;

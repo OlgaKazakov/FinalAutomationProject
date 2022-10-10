@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<suite name = "Suite Web Testing" parallel = "false">
+<suite name = "Suite API and Web Testing" parallel = "false">
     <test name = "API and Web Testing OpenWeather" >
         <parameter name ="PlatformName" value = "apiAndWeb" />
         <classes>

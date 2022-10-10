@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "Suite API Testing" parallel = "false">
+    <test name = "API Student List" >
+        <parameter name ="PlatformName" value = "api" />
+        <classes>
+            <class name ="sanity.StudentsAPI">
+            </class>
+        </classes>
+    </test>
+</suite>

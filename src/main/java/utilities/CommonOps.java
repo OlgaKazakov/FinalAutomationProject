@@ -89,14 +89,14 @@ public class CommonOps extends Base{
         action = new Actions(mobileDriver);
     }
 
-    public static void initAPI() {
-        String url = getData("urlAPI");
-        RestAssured.baseURI = url;
+    public static void initAPI(String urlAPI) {
+        //String url = urlAPI;
+        RestAssured.baseURI = urlAPI;
         request = RestAssured.given();
     }
 
     public static void initAPIandWEB(String browserType) {
-        initAPI();
+        initAPI(getData("urlAPIweb"));
         initBrowser(browserType);
     }
 
@@ -156,6 +156,9 @@ public class CommonOps extends Base{
         else if (platformname.equalsIgnoreCase("mobile")) {
             initMobile();
         }
+        else if (platformname.equalsIgnoreCase("api")) {
+            initAPI(getData("urlAPI"));
+        }
         else if (platformname.equalsIgnoreCase("apiAndWeb")) {
              initAPIandWEB(getData("BrowserNameForApiAndWeb"));
         }
@@ -176,20 +179,24 @@ public class CommonOps extends Base{
 
     @AfterClass
     public void closeSession(){
-        if (!platformname.equalsIgnoreCase("mobile")) {
-            driver.quit();
-        } else {
-            mobileDriver.quit();
+        if(!platformname.equalsIgnoreCase("api")) {
+            if (!platformname.equalsIgnoreCase("mobile")) {
+                driver.quit();
+            } else {
+                mobileDriver.quit();
+            }
         }
         ManageDataBase.closeConnection();
     }
 
     @BeforeMethod
     public void beforeMethod(Method method) {
-        try {
-            MScreenRecorder.startRecord(method.getName());
-        } catch (Exception e) {
-            e.printStackTrace();
+        if(!platformname.equalsIgnoreCase("api")) {
+            try {
+                MScreenRecorder.startRecord(method.getName());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
         if(platformname.equalsIgnoreCase("desktop")) {

@@ -43,8 +43,8 @@ public class Listeners extends CommonOps implements ITestListener {
     }
     public void onTestFailure (ITestResult test) {
         System.out.println("----- Test: " + test.getName() + " failed ------");
-        saveScreenshot();
         if(!platformname.equalsIgnoreCase("api")) {
+            saveScreenshot();
             //stop recording
             try {
                 MScreenRecorder.stopRecord();

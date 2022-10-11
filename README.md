@@ -18,7 +18,6 @@ building automated infrastructure and test execution.
 
 
 ## Project Design
-
 * Page Objects Model 
 * Failure mechanism
 * Using data from DataBases 
@@ -28,7 +27,9 @@ building automated infrastructure and test execution.
 ### Applications under test
 - website SauseDemo (Web)
 - website OpenWeatherMap (API)
+- Students (API)
 - Eribank (Mobile)
 - ToDo list (Electron)
 - Calculator (Desktop)
+
 
